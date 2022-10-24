@@ -1,4 +1,5 @@
 local set = vim.opt
+local g = vim.g
 
 vim.cmd([[ colorscheme gruber ]])
 
@@ -8,7 +9,6 @@ set.clipboard:append("unnamedplus")
 set.completeopt = { "menuone", "preview", "noselect", "noinsert" }
 set.cursorline = true
 set.expandtab = true
-set.foldenable = true -- TODO fix later
 set.ignorecase = true
 set.inccommand = "split"
 set.laststatus = 2
@@ -34,7 +34,10 @@ set.updatetime = 500
 set.wildignore = { ".git/*", "build/*", ".cache/*", ".clangd/*" }
 set.iskeyword:append("-")
 
--- defaults
+-- Global
+g.netrw_keepdir = false
+
+-- Neovim defaults
 set.autoindent = true
 set.autoread = true
 set.backspace = { "indent", "eol", "start" }
