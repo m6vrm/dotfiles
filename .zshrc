@@ -4,8 +4,8 @@ autoload -Uz compinit && compinit
 setopt PROMPT_SUBST
 precmd() { precmd() { echo; } }
 git_branch() { git rev-parse --abbrev-ref HEAD 2> /dev/null; }
-PROMPT="%B%F{blue}%~%f%b"$'\n'"%B%F{%(?.green.red)}%#%f%b "
-RPROMPT="%F{yellow}\$(git_branch)%f"
+PROMPT="%F{red}%n%f in %B%F{yellow}%~%f%b"$'\n'"%F{%(?.white.red)}%#%f "
+RPROMPT="%B%F{green}\$(git_branch)%f%b"
 
 # Environment
 export CLICOLOR=1
@@ -17,4 +17,5 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 dotfiles config status.showUntrackedFiles no
 
 # Aliases
-alias mc='mc --nosubshell'
+alias vim="nvim"
+alias mc="mc --nosubshell"
