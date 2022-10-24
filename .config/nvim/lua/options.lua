@@ -34,8 +34,9 @@ set.updatetime = 500
 set.wildignore = { ".git/*", "build/*", ".cache/*", ".clangd/*" }
 set.iskeyword:append("-")
 
--- Global
+-- Netrw
 g.netrw_keepdir = false
+g.netrw_banner = false
 
 -- Neovim defaults
 set.autoindent = true
