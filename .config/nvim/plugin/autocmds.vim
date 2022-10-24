@@ -1,11 +1,11 @@
 augroup TrimTrailingWhitespaces
     autocmd!
-    autocmd BufWritePre * :lua require("utils").trim_trailing_whitespaces()
+    autocmd BufWritePre * lua require("utils").trim_trailing_whitespaces()
 augroup END
 
 augroup HightlightYank
     autocmd!
-    autocmd TextYankPost * silent! :lua vim.highlight.on_yank()
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank()
 augroup END
 
 augroup DisableCommentsContinuation
