@@ -1,7 +1,10 @@
-*
+/*
 
 !.gitignore
 !.zshrc
-!.config/kitty/*
-!.config/nvim/*
 !.tmux.conf
+
+.config/*
+!.config/
+!.config/kitty/
+!.config/nvim/
