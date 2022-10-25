@@ -4,8 +4,7 @@ vim.g.mapleader = " "
 
 keymap.set({ "n", "v" }, "<Space>", "<NOP>")
 
-keymap.set("i", "jk", "<Esc>")
-keymap.set("i", "kj", "<Esc>")
+keymap.set("i", "jj", "<Esc>")
 
 -- don't save deleted characters into register
 keymap.set("n", "x", '"_x')

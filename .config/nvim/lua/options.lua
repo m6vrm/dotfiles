@@ -11,17 +11,18 @@ set.cursorline = true
 set.expandtab = true
 set.ignorecase = true
 set.inccommand = "split"
+set.iskeyword:append("-")
 set.laststatus = 2
 set.list = true
 set.mousemodel = "extend"
 set.number = true
 set.path:append("**")
 set.relativenumber = true
-set.scrolloff = 1
+set.scrolloff = 5
 set.shiftround = true
 set.shiftwidth = 4
 set.showmatch = true
-set.sidescrolloff = 2
+set.sidescrolloff = 10
 set.signcolumn = "yes:1"
 set.smartcase = true
 set.softtabstop = 4
@@ -29,10 +30,10 @@ set.splitbelow = true
 set.splitright = true
 set.tabstop = 4
 set.termguicolors = true
+set.timeoutlen = 500
 set.undofile = true
 set.updatetime = 500
 set.wildignore = { ".git/*", "build/*", ".cache/*", ".clangd/*" }
-set.iskeyword:append("-")
 
 -- Netrw
 g.netrw_keepdir = false
