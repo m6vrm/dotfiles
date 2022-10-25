@@ -1,6 +1,6 @@
 augroup TrimTrailingWhitespaces
     autocmd!
-    autocmd BufWritePre * lua require("utils").trim_trailing_whitespaces()
+    autocmd BufWritePre * silent! lua require("utils").trim_trailing_whitespaces()
 augroup END
 
 augroup HightlightYank
