@@ -69,7 +69,7 @@ let s:type = { "fg": s:yellow }
 let s:function = { "fg": s:blue }
 let s:literal = { "fg": s:magenta }
 let s:string = { "fg": s:green }
-let s:special = { "fg": s:cyan }
+let s:char = { "fg": s:cyan }
 let s:info = { "style": "italic" }
 
 " Modes
@@ -85,7 +85,7 @@ highlight! link VisualNOS   Visual
 call s:hl("Comment",        s:comment)
 call s:hl("Constant",       s:fg)
 call s:hl("String",         s:string)
-call s:hl("Character",      s:special)
+call s:hl("Character",      s:char)
 call s:hl("Number",         s:literal)
 call s:hl("Boolean",        s:literal)
 call s:hl("Float",          s:literal)
@@ -96,7 +96,7 @@ call s:hl("Operator",       s:fg)
 call s:hl("PreProc",        s:preproc)
 call s:hl("Type",           s:type)
 call s:hl("Special",        s:fg)
-call s:hl("SpecialChar",    s:special)
+call s:hl("SpecialChar",    s:char)
 call s:hl("SpecialComment", s:merge(s:comment, s:info))
 call s:hl("Underlined",     { "style": "underline" })
 call s:hl("Ignore",         { "fg": s:black })
