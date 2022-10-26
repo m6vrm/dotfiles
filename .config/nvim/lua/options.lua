@@ -1,54 +1,77 @@
 local set = vim.opt
 local g = vim.g
 
-vim.cmd([[ colorscheme gruber ]])
-
-set.breakindent = true
-set.cindent = true
-set.clipboard:append("unnamedplus")
-set.completeopt = { "menuone", "preview", "noselect", "noinsert" }
-set.cursorline = true
-set.expandtab = true
-set.ignorecase = true
-set.inccommand = "split"
-set.iskeyword:append("-")
-set.laststatus = 2
-set.list = true
-set.mousemodel = "extend"
+-- Line numbers
 set.number = true
-set.path:append("**")
 set.relativenumber = true
-set.scrolloff = 5
-set.shiftround = true
-set.shiftwidth = 4
-set.showmatch = true
-set.sidescrolloff = 10
 set.signcolumn = "yes:1"
+
+-- Search
+set.ignorecase = true
 set.smartcase = true
+set.incsearch = true -- Neovim default
+set.hlsearch = true -- Neovim default
+
+-- Indentation
+set.expandtab = true
+set.shiftwidth = 4
+set.tabstop = 4
 set.softtabstop = 4
+set.cindent = true
+set.breakindent = true
+set.list = true
+set.shiftround = true
+set.autoindent = true -- Neovim default
+set.smarttab = true -- Neovim default
+
+-- Completion
+set.path:append("**")
+set.completeopt = { "menuone", "preview", "noselect", "noinsert" }
+set.wildignore = { ".git/*", "build/*", ".cache/*", ".clangd/*" }
+set.wildmenu = true -- Neovim default
+
+-- Buffers
+set.hidden = true -- Neovim default
+set.autoread = true -- Neovim default
+set.switchbuf = "uselast" -- Neovim default
+
+-- Status line
+set.laststatus = 2
+set.showcmd = true -- Neovim default
+set.ruler = true -- Neovim default
+
+-- Appearance
+set.termguicolors = true
+set.cursorline = true
+
+-- Splits
 set.splitbelow = true
 set.splitright = true
-set.tabstop = 4
-set.termguicolors = true
-set.timeoutlen = 500
-set.undofile = true
-set.updatetime = 500
-set.wildignore = { ".git/*", "build/*", ".cache/*", ".clangd/*" }
+
+-- Match
+-- set.showmatch = true -- may be useful with zero matchtime
+-- set.matchtime = 0
+
+-- Mouse
+set.mouse = "" -- Neovim default = "nvi"
+set.mousemodel = "extend"
+
+-- Scroll
+set.scrolloff = 5
+set.sidescrolloff = 10
 
 -- Netrw
 g.netrw_keepdir = false
 g.netrw_banner = false
 
--- Neovim defaults
-set.autoindent = true
-set.autoread = true
-set.backspace = { "indent", "eol", "start" }
-set.hidden = true
-set.hlsearch = true
-set.incsearch = true
-set.mouse = "nvi"
-set.ruler = true
-set.showcmd = true
-set.smarttab = true
-set.switchbuf = "uselast"
-set.wildmenu = true
+-- Misc
+set.clipboard:append("unnamedplus")
+set.iskeyword:append("-")
+set.undofile = true
+set.updatetime = 500
+set.timeoutlen = 1000 -- Vim default
+set.ttimeoutlen = 50 -- Neovim default
+set.backspace = { "indent", "eol", "start" } -- Neovim default
+
+-- Theme
+vim.cmd([[ colorscheme gruber ]])

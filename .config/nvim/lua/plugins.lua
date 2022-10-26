@@ -11,6 +11,13 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+vim.cmd([[
+    augroup packer_user_config
+        autocmd!
+        autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    augroup end
+]])
+
 require("packer").startup(function (use)
     use("wbthomason/packer.nvim")
 
@@ -48,7 +55,7 @@ treesitter.setup({
     auto_install = true,
     highlight = {
         enable = true,
-        disable = { "markdown" },
+        disable = { "markdown", "help" },
         additional_vim_regex_highlighting = false
     },
     indent = { enable = true }
