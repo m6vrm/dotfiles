@@ -66,6 +66,7 @@ g.netrw_banner = false
 -- Misc
 set.clipboard:append("unnamedplus")
 set.iskeyword:append("-")
+set.isfname:remove("=")
 set.undofile = true
 set.updatetime = 500
 set.timeoutlen = 1000 -- Vim default

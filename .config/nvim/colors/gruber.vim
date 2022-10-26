@@ -165,7 +165,7 @@ call s:hl("WinBar",         { "fg": s:magenta, "style": "bold" })
 highlight! link WinBarNC    WinBar
 
 " Misc
-call s:hl("MatchParen",     { "bg": s:gray, "style": "bold" })
+call s:hl("MatchParen",     { "fg": s:yellow, "style": "bold" })
 call s:hl("QuickFixLine",   { "bg": s:gray, "style": "bold" })
 call s:hl("SpecialKey",     { "fg": s:magenta })
 call s:hl("Conceal",        { "fg": s:magenta })
