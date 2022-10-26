@@ -33,6 +33,8 @@ require("packer").startup(function (use)
         end
     })
 
+    use("nvim-treesitter/playground")
+
     if packer_bootstrap then
         require("packer").sync()
     end
@@ -58,5 +60,6 @@ treesitter.setup({
         disable = { "markdown", "help" },
         additional_vim_regex_highlighting = false
     },
-    indent = { enable = true }
+    indent = { enable = true },
+    playground = { enable = true }
 })

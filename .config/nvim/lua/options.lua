@@ -9,8 +9,8 @@ set.signcolumn = "yes:1"
 -- Search
 set.ignorecase = true
 set.smartcase = true
+set.hlsearch = false -- Neovim default = true
 set.incsearch = true -- Neovim default
-set.hlsearch = true -- Neovim default
 
 -- Indentation
 set.expandtab = true
