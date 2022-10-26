@@ -14,13 +14,12 @@ set.hlsearch = true -- Neovim default
 
 -- Indentation
 set.expandtab = true
-set.shiftwidth = 4
 set.tabstop = 4
-set.softtabstop = 4
+set.shiftwidth = 4
+set.shiftround = true
 set.cindent = true
 set.breakindent = true
 set.list = true
-set.shiftround = true
 set.autoindent = true -- Neovim default
 set.smarttab = true -- Neovim default
 
