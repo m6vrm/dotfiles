@@ -26,3 +26,5 @@ let &t_SR = "\e[4 q"
 let &t_EI = "\e[2 q"
 
 colorscheme gruber
+
+nnoremap <space> :e %:h<cr>
