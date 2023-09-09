@@ -11,6 +11,7 @@ set hidden
 set ignorecase
 set incsearch
 set path=.,**
+set ruler
 set shiftround
 set shiftwidth=4
 set smartcase
