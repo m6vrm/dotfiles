@@ -1,5 +1,5 @@
 filetype plugin indent on
-syntax on
+syntax enable
 
 set autoindent
 set autoread
