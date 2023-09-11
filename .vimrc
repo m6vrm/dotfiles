@@ -19,6 +19,7 @@ set smarttab
 set tabstop=4
 set ttimeout
 set ttimeoutlen=1
+set undodir=~/.vim/undo//
 set undofile
 set wildmenu
 
