@@ -18,6 +18,11 @@
 .config/nvim/plugin/packer_compiled.lua
 
 !.vimrc
+.vim/*
 !.vim/
+!.vim/colors/
+!.vim/undo/.gitkeep
+!.vim/swap/.gitkeep
+!.vim/backup/.gitkeep
 
 !Wallpapers/
