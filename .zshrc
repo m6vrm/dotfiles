@@ -39,6 +39,12 @@ togif() {
     ffmpeg -i "$in" -pix_fmt rgb8 -r 10 "$out" && gifsicle -O3 "$out" -o "$out"
 }
 
+compress() {
+    local in=$1
+    local out=$2
+    ffmpeg -i "$in" -vcodec libx264 -crf 24 "$out"
+}
+
 cleanup() {
     if command -v pacman &> /dev/null; then
         set -x
