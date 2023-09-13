@@ -19,6 +19,7 @@
 
 !.vimrc
 .vim/*
+!.vim/
 !.vim/colors/
 !.vim/undo/
 !.vim/swap/
