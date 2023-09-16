@@ -23,6 +23,7 @@ set ttimeout
 set ttimeoutlen=1
 set undodir=~/.vim/undo//
 set undofile
+set wildignore=**/*.git/**,**/build/**,**/.cache/**,**/.clangd/**
 set wildmenu
 
 let &t_SI = "\e[5 q"
