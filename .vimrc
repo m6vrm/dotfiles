@@ -12,6 +12,7 @@ set expandtab
 set hidden
 set ignorecase
 set incsearch
+set laststatus=2
 set path=.,**
 set ruler
 set shiftround
