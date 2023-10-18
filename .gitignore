@@ -9,7 +9,6 @@
 .config/*
 !.config/
 !.config/kitty/
-!.config/mc/
 !.config/tmux/
 !.config/git/
 !.config/mpv/
