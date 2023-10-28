@@ -6,7 +6,6 @@ set autoread
 set backspace=indent,eol,start
 set backupdir=~/.vim/backup//
 set cindent
-set cursorline
 set directory=~/.vim/swap//
 set expandtab
 set hidden
@@ -31,9 +30,7 @@ let &t_SI = "\e[5 q"
 let &t_SR = "\e[4 q"
 let &t_EI = "\e[2 q"
 
-colorscheme gruber
-
-nnoremap <space> :e %:h<cr>
+colorscheme gruber-plain
 
 command -nargs=1 GG vimgrep /<args>/gj `git ls-files` | cw
 command -nargs=1 GA vimgrep /<args>/gj ** | cw
