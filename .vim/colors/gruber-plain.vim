@@ -11,7 +11,6 @@ let g:colors_name = "gruber-plain"
 let s:black  = ["#1c1c1c", "234"]
 let s:white  = ["#e4e4e4", "254"]
 let s:yellow = ["#ffd700", "220"]
-let s:green  = ["#87d75f", "113"]
 let s:brown  = ["#af875f", "137"]
 
 " Styles
@@ -77,6 +76,6 @@ call s:hl("WildMenu",       { "fg": s:black, "bg": s:yellow, "style": s:bold })
 
 " Misc
 call s:hl("Title",          { "fg": s:white })
-call s:hl("MatchParen",     { "fg": s:yellow })
+call s:hl("MatchParen",     { "fg": s:yellow, "style": s:bold })
 call s:hl("Directory",      { "fg": s:white, "style": s:bold })
 call s:hl("EndOfBuffer",    { "fg": s:black })
