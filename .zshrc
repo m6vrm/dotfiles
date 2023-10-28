@@ -19,7 +19,7 @@ RPROMPT="%B\$(git_prompt)%b"
 
 # Environment
 export CLICOLOR=1
-export EDITOR=nvim
+export EDITOR=vim
 
 # Dotfiles
 # git clone --bare git@gitlab.com:madyanov/dotfiles.git "$HOME/.dotfiles"
