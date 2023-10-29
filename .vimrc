@@ -6,6 +6,7 @@ set autoread
 set backspace=indent,eol,start
 set backupdir=~/.vim/backup//
 set cindent
+set cursorline
 set directory=~/.vim/swap//
 set expandtab
 set hidden
