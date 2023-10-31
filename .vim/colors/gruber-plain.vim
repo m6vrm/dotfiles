@@ -7,7 +7,6 @@ endif
 set background=dark
 let g:colors_name = "gruber-plain"
 
-" Colors
 let s:black  = ["#1c1c1c", "234"]
 let s:brown  = ["#af875f", "137"]
 let s:cyan   = ["#afd7af", "151"]
@@ -17,7 +16,6 @@ let s:red    = ["#ff5f5f", "203"]
 let s:white  = ["#e4e4e4", "254"]
 let s:yellow = ["#ffd700", "220"]
 
-" Styles
 let s:bold      = "bold"
 let s:italic    = "italic"
 let s:underline = "underline"
