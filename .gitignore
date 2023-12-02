@@ -2,6 +2,7 @@
 
 !.gitignore
 !.zshrc
+!.zprofile-linux
 !.Xresources
 !.imwheelrc
 !.Brewfile

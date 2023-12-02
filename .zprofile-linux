@@ -1,0 +1,6 @@
+export MOZ_ENABLE_WAYLAND=1
+
+export GDK_DEBUG=portals
+export GTK_USE_PORTAL=1
+
+export LINUX_SOURCEKIT_LIB_PATH=/usr/lib/swift/lib
