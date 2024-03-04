@@ -35,3 +35,5 @@ colorscheme gruber-plain
 
 command -nargs=1 GG vimgrep /<args>/gj `git ls-files` | cw
 command -nargs=1 GA vimgrep /<args>/gj ** | cw
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
