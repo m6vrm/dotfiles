@@ -30,8 +30,10 @@ export EDITOR=vim
 alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 
 # Aliases
-alias mc="mc --nosubshell"
 alias dev='cd "$HOME/Development"'
+
+# Bindings
+bindkey '^R' history-incremental-search-backward
 
 # Functions
 togif() {
