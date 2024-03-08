@@ -67,7 +67,7 @@ cleanup() {
     if command -v brew &> /dev/null; then
         set -x
         brew autoremove
-        brew cleanup
+        brew cleanup --prune=1 -s
         set +x
     fi
 }
