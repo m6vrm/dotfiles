@@ -59,6 +59,7 @@ endfunction
 call s:hl("Comment",        { "fg": s:brown })
 call s:hl("Constant",       { "fg": s:cyan })
 call s:hl("CursorLine",     { "bg": s:gray })
+call s:hl("ColorColumn",    { "bg": s:gray })
 call s:hl("DiffAdd",        { "fg": s:green })
 call s:hl("DiffChange",     { "fg": s:blue })
 call s:hl("DiffDelete",     { "fg": s:red })
