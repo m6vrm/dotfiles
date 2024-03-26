@@ -71,3 +71,9 @@ cleanup() {
         set +x
     fi
 }
+
+# Autorun
+
+case $- in *i*)
+    if [ -z "$TMUX" ]; then exec tmux; fi;;
+esac
