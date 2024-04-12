@@ -74,6 +74,8 @@ cleanup() {
 
 # Autorun
 
-case $- in *i*)
-    if [ -z "$TMUX" ]; then exec tmux; fi;;
-esac
+if [ -z "$INTELLIJ_ENVIRONMENT_READER" ]; then
+    case $- in *i*)
+        if [ -z "$TMUX" ]; then exec tmux; fi;;
+    esac
+fi
