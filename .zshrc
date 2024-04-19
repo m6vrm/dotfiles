@@ -11,12 +11,11 @@ setopt PROMPT_SUBST
 
 # Prompt
 precmd() { precmd() { echo; } }
-PROMPT="%F{red}%n%f in %B%F{yellow}%~%f%b"$'\n'"%F{%(?.white.red)}%#%f "
 git_is_repo() { git rev-parse --git-dir > /dev/null 2>&1; }
 git_has_changes() { return $(git status --porcelain | wc -l); }
 git_branch() { git rev-parse --abbrev-ref HEAD 2> /dev/null; }
-git_prompt() { git_is_repo && (git_has_changes && echo "%F{green}$(git_branch)%f" || echo "%F{red}$(git_branch) *%f"); }
-RPROMPT="%B\$(git_prompt)%b"
+git_prompt() { git_is_repo && (git_has_changes && echo " on %B%F{green}$(git_branch)%f%b" || echo " on %B%F{red}$(git_branch) *%f%b"); }
+PROMPT="%F{red}%n%f in %B%F{yellow}%~%f%b\$(git_prompt)"$'\n'"%F{%(?.white.red)}%#%f "
 
 # Environment
 export CLICOLOR=1
