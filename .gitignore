@@ -9,8 +9,6 @@
 
 .config/*
 !.config/
-.config/kitty/font.conf
-!.config/kitty/
 !.config/alacritty/
 !.config/tmux/
 !.config/git/
