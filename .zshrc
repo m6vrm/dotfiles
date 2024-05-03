@@ -25,7 +25,7 @@ export EDITOR=vim
 
 # Dotfiles
 
-# git clone --bare git@gitlab.com:madyanov/dotfiles.git "$HOME/.dotfiles"
+# git clone --bare roman@m6v.ru:/var/www/git/dotfiles.git "$HOME/.dotfiles"
 # alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 # dotfiles checkout
 # dotfiles config status.showUntrackedFiles no
