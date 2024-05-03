@@ -1,2 +1,0 @@
-export MOZ_ENABLE_WAYLAND=1
-export LINUX_SOURCEKIT_LIB_PATH=/usr/lib/swift/lib
