@@ -10,6 +10,7 @@ setopt INC_APPEND_HISTORY_TIME
 setopt PROMPT_SUBST
 
 # Prompt
+
 precmd() { precmd() { echo; } }
 git_is_repo() { git rev-parse --git-dir > /dev/null 2>&1; }
 git_has_changes() { return $(git status --porcelain | wc -l); }
@@ -18,10 +19,12 @@ git_prompt() { git_is_repo && (git_has_changes && echo " on %B%F{green}$(git_bra
 PROMPT="%F{red}%n%f in %B%F{yellow}%~%f%b\$(git_prompt)"$'\n'"%F{%(?.white.red)}%#%f "
 
 # Environment
+
 export CLICOLOR=1
 export EDITOR=vim
 
 # Dotfiles
+
 # git clone --bare git@gitlab.com:madyanov/dotfiles.git "$HOME/.dotfiles"
 # alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 # dotfiles checkout
@@ -29,17 +32,14 @@ export EDITOR=vim
 alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 
 # Aliases
+
 alias dev='cd "$HOME/Development"'
 
 # Bindings
+
 bindkey '^R' history-incremental-search-backward
 
 # Functions
-togif() {
-    local in=$1
-    local out=$2
-    ffmpeg -i "$in" -pix_fmt rgb8 -r 10 "$out" && gifsicle -O3 "$out" -o "$out"
-}
 
 compress() {
     local in=$1
