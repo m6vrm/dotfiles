@@ -16,6 +16,7 @@ set expandtab
 set hidden
 set ignorecase
 set incsearch
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 set laststatus=2
 set path=.,**
 set ruler
