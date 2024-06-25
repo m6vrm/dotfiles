@@ -26,10 +26,10 @@ export EDITOR=vim
 # Dotfiles
 
 # git clone --bare roman@m6v.ru:/var/www/git/dotfiles.git "$HOME/.dotfiles"
-# alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
+# alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 # dotfiles checkout
 # dotfiles config status.showUntrackedFiles no
-alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
+alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 
 # Aliases
 
@@ -67,7 +67,7 @@ cleanup() {
     if command -v brew &> /dev/null; then
         set -x
         brew autoremove
-        brew cleanup --prune=1 -s
+        brew cleanup --prune=0 -s
         set +x
     fi
 }
