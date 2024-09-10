@@ -2,16 +2,12 @@
 
 !.gitignore
 !.zshrc
-!.Xresources
-!.imwheelrc
-!.Brewfile
 
 .config/*
 !.config/
 !.config/alacritty/
 !.config/tmux/
 !.config/git/
-!.config/mpv/
 .config/nvim/*
 !.config/nvim/
 !.config/nvim/init.vim
