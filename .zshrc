@@ -1,7 +1,7 @@
 autoload -Uz compinit && compinit
 zstyle :compinstall filename "$HOME/.zshrc"
 
-HISTFILE=~/.zsh_history
+HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
 
@@ -23,6 +23,10 @@ PROMPT="%F{red}%n%f:%B%F{yellow}%~%f%b\$(git_prompt)"$'\n'"%F{%(?.white.red)}%#%
 export CLICOLOR=1
 export EDITOR=vim
 
+# Bindings
+
+bindkey '^R' history-incremental-search-backward
+
 # Dotfiles
 
 # git clone --bare roman@m6v.ru:/var/www/git/dotfiles.git "$HOME/.dotfiles"
@@ -35,10 +39,6 @@ alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 
 alias dev='cd "$HOME/Development"'
 alias dl='cd "$HOME/Downloads"'
-
-# Bindings
-
-bindkey '^R' history-incremental-search-backward
 
 # Functions
 

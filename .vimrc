@@ -36,12 +36,12 @@ let &t_SI = "\e[5 q"
 let &t_SR = "\e[4 q"
 let &t_EI = "\e[2 q"
 
-colorscheme gruber-plain
+colorscheme sorbet
 
 highlight TrailingWhitespace ctermbg=red guibg=red
 call matchadd("TrailingWhitespace", '\v\s+$')
 
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 command -nargs=1 GG vimgrep /<args>/gj `git ls-files` | cw
 command -nargs=1 GA vimgrep /<args>/gj ** | cw
-
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
