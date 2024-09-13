@@ -31,8 +31,8 @@ bindkey '^R' history-incremental-search-backward
 
 # git clone --bare git@github.com:m6vrm/dotfiles.git "$HOME/.dotfiles"
 # alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
-# dotfiles checkout
-# dotfiles config status.showUntrackedFiles no
+# dots checkout
+# dots config status.showUntrackedFiles no
 alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 
 # Aliases
