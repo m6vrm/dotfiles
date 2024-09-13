@@ -39,14 +39,9 @@ alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 
 alias dev='cd "$HOME/Development"'
 alias dl='cd "$HOME/Downloads"'
+alias dt='cd "$HOME/Desktop"'
 
 # Functions
-
-compress() {
-    local in=$1
-    local out=$2
-    ffmpeg -i "$in" -vcodec libx264 -crf 24 "$out"
-}
 
 cleanup() {
     if command -v pacman &> /dev/null; then
@@ -70,4 +65,10 @@ cleanup() {
         brew cleanup --prune=0 -s
         set +x
     fi
+}
+
+compress() {
+    local in=$1
+    local out=$2
+    ffmpeg -i "$in" -vcodec libx264 -crf 24 "$out"
 }
