@@ -29,7 +29,7 @@ bindkey '^R' history-incremental-search-backward
 
 # Dotfiles
 
-# git clone --bare roman@m6v.ru:/var/www/git/dotfiles.git "$HOME/.dotfiles"
+# git clone --bare git@github.com:m6vrm/dotfiles.git "$HOME/.dotfiles"
 # alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 # dotfiles checkout
 # dotfiles config status.showUntrackedFiles no
