@@ -29,7 +29,7 @@ set ttimeout
 set ttimeoutlen=1
 set undodir=~/.vim/undo//
 set undofile
-set wildignore=**/*.git/**,**/build/**,**/.cache/**,**/.clangd/**
+set wildignore=**/*.git/**,**/build/**,**/.build/**
 set wildmenu
 
 let &t_SI = "\e[5 q"
@@ -38,10 +38,7 @@ let &t_EI = "\e[2 q"
 
 colorscheme gruber
 
-highlight TrailingWhitespace ctermbg=red guibg=red
-call matchadd("TrailingWhitespace", '\v\s+$')
-
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-command -nargs=1 GG vimgrep /<args>/gj `git ls-files` | cw
-command -nargs=1 GA vimgrep /<args>/gj ** | cw
+highlight TrailingWhitespace ctermbg=red guibg=red
+call matchadd("TrailingWhitespace", '\v\s+$')
