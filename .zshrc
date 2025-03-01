@@ -1,3 +1,5 @@
+bindkey -e
+
 autoload -Uz compinit && compinit
 autoload -Uz vcs_info
 
