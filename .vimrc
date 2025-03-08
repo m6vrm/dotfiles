@@ -42,3 +42,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 highlight TrailingWhitespace ctermbg=red guibg=red
 call matchadd("TrailingWhitespace", '\v\s+$')
+
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
