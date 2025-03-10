@@ -25,6 +25,7 @@ PROMPT='%F{yellow}%~%f %F{red}${vcs_info_msg_0_}%f${NEWLINE}$ '
 export CLICOLOR=1
 export EDITOR=vim
 export BAT_THEME=gruvbox-dark
+export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
 
 # Bindings
 
