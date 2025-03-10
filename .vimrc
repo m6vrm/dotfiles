@@ -46,4 +46,7 @@ call matchadd("TrailingWhitespace", '\v\s+$')
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
+
+nnoremap <C-n> :NERDTreeToggle<CR>
