@@ -1,6 +1,3 @@
-" unlet! skip_defaults_vim
-" source $VIMRUNTIME/defaults.vim
-
 filetype plugin indent on
 syntax enable
 
@@ -18,6 +15,7 @@ set ignorecase
 set incsearch
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 set laststatus=2
+set number
 set path=.,**
 set ruler
 set shiftround
@@ -36,7 +34,7 @@ let &t_SI = "\e[5 q"
 let &t_SR = "\e[4 q"
 let &t_EI = "\e[2 q"
 
-colorscheme gruber
+colorscheme retrobox
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
