@@ -9,7 +9,7 @@ set autoread
 set backspace=indent,eol,start
 set backupdir=~/.vim/backup//
 set cindent
-set colorcolumn=80
+set colorcolumn=80,100,120
 set cursorline
 set directory=~/.vim/swap//
 set expandtab
