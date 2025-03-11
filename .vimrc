@@ -20,6 +20,7 @@ set path=.,**
 set ruler
 set shiftround
 set shiftwidth=4
+set signcolumn=yes
 set smartcase
 set smarttab
 set tabstop=4
@@ -27,6 +28,7 @@ set ttimeout
 set ttimeoutlen=1
 set undodir=~/.vim/undo//
 set undofile
+set updatetime=300
 set wildignore=**/*.git/**,**/build/**,**/.build/**
 set wildmenu
 
@@ -36,11 +38,15 @@ let &t_EI = "\e[2 q"
 
 colorscheme retrobox
 
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
+" Highlight trailing whitespaces
 highlight TrailingWhitespace ctermbg=red guibg=red
-call matchadd("TrailingWhitespace", '\v\s+$')
+match TrailingWhitespace /\s\+$/
 
+" Autocmds
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Plugins
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -58,3 +64,4 @@ nmap <silent><nowait> gd <Plug>(coc-definition)
 nmap <silent><nowait> gy <Plug>(coc-type-definition)
 nmap <silent><nowait> gi <Plug>(coc-implementation)
 nmap <silent><nowait> gr <Plug>(coc-references)
+nmap <leader>rn <Plug>(coc-rename)
