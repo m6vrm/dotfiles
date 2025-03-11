@@ -11,6 +11,7 @@
 !.vimrc
 .vim/*
 !.vim/
+!.vim/coc-settings.json
 !.vim/colors/
 !.vim/undo/
 !.vim/swap/
