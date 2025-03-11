@@ -20,7 +20,7 @@ set path=.,**
 set ruler
 set shiftround
 set shiftwidth=4
-set signcolumn=yes
+set signcolumn=number
 set smartcase
 set smarttab
 set tabstop=4
