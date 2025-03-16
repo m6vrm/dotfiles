@@ -54,6 +54,9 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+" Bindings
+nnoremap q: <nop>
+
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
 
