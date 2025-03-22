@@ -55,13 +55,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Bindings
-nnoremap q: <nop>
+nmap q: <nop>
 
 " NERDTree
-nnoremap <silent><expr> <C-n> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
+nmap <silent><expr> <C-n> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
 " CoC
-nmap <silent><nowait> [g <Plug>(coc-diagnostic-prev)
-nmap <silent><nowait> ]g <Plug>(coc-diagnostic-next)
-nmap <silent><nowait> gD <Plug>(coc-definition)
-nmap <silent><nowait> gR <Plug>(coc-references)
+nmap [g <Plug>(coc-diagnostic-prev)
+nmap ]g <Plug>(coc-diagnostic-next)
+nmap gD <Plug>(coc-definition)
+nmap gR <Plug>(coc-references)
+nmap gh :CocCommand clangd.switchSourceHeader<CR>
