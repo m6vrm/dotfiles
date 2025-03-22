@@ -50,7 +50,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
@@ -58,7 +58,7 @@ call plug#end()
 nnoremap q: <nop>
 
 " NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <silent><expr> <C-n> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
 " CoC
 nmap <silent><nowait> [g <Plug>(coc-diagnostic-prev)
