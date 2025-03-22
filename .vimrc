@@ -63,6 +63,5 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " CoC
 nmap <silent><nowait> [g <Plug>(coc-diagnostic-prev)
 nmap <silent><nowait> ]g <Plug>(coc-diagnostic-next)
-nmap <silent><nowait> gd <Plug>(coc-definition)
-nmap <silent><nowait> gr <Plug>(coc-references)
-nmap <leader>rn <Plug>(coc-rename)
+nmap <silent><nowait> gD <Plug>(coc-definition)
+nmap <silent><nowait> gR <Plug>(coc-references)
