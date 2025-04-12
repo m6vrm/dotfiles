@@ -7,7 +7,7 @@ zstyle :compinstall filename "$HOME/.zshrc"
 zstyle ':vcs_info:*' formats '%b %u%c'
 zstyle ':vcs_info:*' check-for-changes true
 
-HISTFILE=~/.histfile
+HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
