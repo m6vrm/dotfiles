@@ -8,6 +8,7 @@ set directory=~/.vim/swap//
 set expandtab
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 set number
+set path=.,**
 set shiftwidth=4
 set smarttab
 set tabstop=4
