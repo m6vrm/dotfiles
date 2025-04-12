@@ -14,38 +14,21 @@ SAVEHIST=100000
 setopt HIST_IGNORE_DUPS
 setopt PROMPT_SUBST
 
-# Prompt
-
 precmd() { vcs_info }
 NEWLINE=$'\n'
 PROMPT='%F{yellow}%~%f %F{red}${vcs_info_msg_0_}%f${NEWLINE}$ '
 
-# Environment
-
 export CLICOLOR=1
 export EDITOR=vim
-export BAT_THEME=gruvbox-dark
-export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
-
-# Bindings
-
-bindkey '^R' history-incremental-search-backward
-
-# Dotfiles
 
 # git clone --bare git@github.com:m6vrm/dotfiles.git "$HOME/.dotfiles"
 # alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 # dots checkout
 # dots config status.showUntrackedFiles no
 alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
-
-# Aliases
-
 alias dev='cd "$HOME/Development"'
 alias dl='cd "$HOME/Downloads"'
 alias dt='cd "$HOME/Desktop"'
-
-# Functions
 
 cleanup() {
     if command -v pacman &> /dev/null; then
