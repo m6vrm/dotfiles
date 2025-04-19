@@ -3,13 +3,16 @@ syntax enable
 
 colorscheme retrobox
 
+set autoread
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set expandtab
+set ignorecase
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 set number
 set path=.,**
 set shiftwidth=4
+set smartcase
 set smarttab
 set tabstop=4
 set ttimeout
