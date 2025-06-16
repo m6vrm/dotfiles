@@ -4,6 +4,10 @@ syntax enable
 set background=dark
 colorscheme retrobox
 
+set guioptions-=T
+set guioptions-=m
+set guioptions-=r
+
 set autoread
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
