@@ -14,6 +14,7 @@ set directory=~/.vim/swap//
 set expandtab
 set ignorecase
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
+set nomagic
 set number
 set path=.,**
 set ruler
