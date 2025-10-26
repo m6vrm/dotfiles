@@ -60,8 +60,12 @@ compress() {
     ffmpeg -i "$in" -vcodec libx264 -crf 24 "$out"
 }
 
-yt() {
+yt-mp4() {
     local url=$1
-    # --format "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"
     yt-dlp --cookies-from-browser=firefox -t mp4 "$url"
+}
+
+yt-mp3() {
+    local url=$1
+    yt-dlp --cookies-from-browser=firefox -t mp3 "$url"
 }

@@ -1,6 +1,8 @@
 filetype plugin indent on
 syntax enable
 
+runtime ftplugin/man.vim
+
 set background=dark
 colorscheme retrobox
 
@@ -15,6 +17,7 @@ set expandtab
 set ignorecase
 set incsearch
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
+set mouse=a
 set nomagic
 set number
 set path=.,**
