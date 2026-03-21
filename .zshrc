@@ -29,6 +29,7 @@ alias dots='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 alias dev='cd "$HOME/Development"'
 alias dl='cd "$HOME/Downloads"'
 alias dt='cd "$HOME/Desktop"'
+alias yayy='yay --noconfirm'
 
 cleanup() {
     if command -v pacman &> /dev/null; then
@@ -40,9 +41,9 @@ cleanup() {
         set +x
     fi
 
-    if command -v paru &> /dev/null; then
+    if command -v yay &> /dev/null; then
         set -x
-        paru -Scda --noconfirm
+        yay -Sc --noconfirm
         set +x
     fi
 
